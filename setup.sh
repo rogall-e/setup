@@ -5,7 +5,7 @@ case "$(uname -sr)" in
    Darwin*)
      echo 'Mac OS X'
      chmod +x mac/*.sh
-     ./mac/setup.sh
+     ./mac/setup_linux.sh
      ;;
 
    Linux*Microsoft*)
@@ -15,7 +15,7 @@ case "$(uname -sr)" in
    Linux*)
      echo 'Linux'
      chmod +x linux/*.sh
-     ./linux/setup.sh
+     ./linux/setup_linux.sh
      ;;
 
    CYGWIN*|MINGW*|MINGW32*|MSYS*)
