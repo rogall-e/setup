@@ -4,11 +4,13 @@ You get to the home directory with: cd ..\..\Users\<user name>
 
 From here you can navigate to other directories like Downloads or Documents
 
-Run: Set-ExecutionPolicy RemoteSigned 
-
+Run: 
+```powershell
+Set-ExecutionPolicy RemoteSigned 
+```
 This will enable powershell scripts to run!
 
-Than run: 
+Than run inside the powershell: 
 - .\setup1.ps1 
 - .\setup2.ps1
 - .\setup3.ps1

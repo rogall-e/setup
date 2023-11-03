@@ -1,3 +1,4 @@
+#install VSCode
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
@@ -8,6 +9,8 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 
+
+#install dbeaver
 sudo apt update
 sudo apt -y install default-jdk
 
@@ -16,8 +19,9 @@ echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list
 
 sudo apt update && sudo apt install dbeaver-ce
 
-
+#create ssh key
+sudo apt install xclip
 #!/usr/bin/env bash
 cd 
 ssh-keygen
-cat .ssh/id_rsa.pub | pbcopy
+cat .ssh/id_rsa.pub | xclip -sel clip

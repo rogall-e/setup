@@ -1,5 +1,5 @@
 #run setup1.sh
-./setup1.sh
+./setup_mac1.sh
 
 #To avoid needing to manually restart the terminal after setup1.sh completes the code below creates a new terminal window
 #and executes setup2.sh and setup3.sh in this new window
